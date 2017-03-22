@@ -1,5 +1,6 @@
 {
   "name": "automation-tools",
   "dependencies": {
+    "bootstrap": "boostrap#^3.3.7"
   }
 }

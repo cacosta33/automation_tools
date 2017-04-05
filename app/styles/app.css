@@ -1,0 +1,21 @@
+
+body, html{
+	background-color: #E8E8E8;
+}
+
+#nav-bar li a {
+	background-color: #B80000;
+	font-family: helvetica;
+	color: white;
+}
+
+.container{
+	padding-top: 10%;
+}
+
+
+
+/* About page styling */
+ul.about {
+	list-style-type: none;
+}

@@ -6,7 +6,7 @@ export default Ember.Component.extend({
 		{
 			label: 'About',
 			id: 'about',
-			url: '/about',
+			url: 'about',
 			restricted: false,
 		},
 		{	
@@ -17,13 +17,13 @@ export default Ember.Component.extend({
 				{
 					label: 'Tool 1',
 					id: 'tool1',
-					url: '#',
+					url: 'tools.tool1',
 					restricted: false
 				},
 				{
 					label: 'Tool 2',
 					id: 'tool2',
-					url: '#',
+					url: 'tools.tool2',
 					restricted: false
 				}
 			]

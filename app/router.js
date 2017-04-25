@@ -13,6 +13,9 @@ Router.map(function() {
   	this.route('tool1');
   	this.route('tool2');
   });
+
+  this.route('test-case', function() {});
+  this.route('add-edit-page');
 });
 
 

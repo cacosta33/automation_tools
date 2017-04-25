@@ -1,0 +1,21 @@
+<div class="row">
+	<div class="col-md-12">
+		<div class="panel panel-default">
+			<div class="panel-body">
+				<form>
+					<div class="form-group">
+						<label for="test-case-type">Select Test Case Type: </label>
+						<select class="form-control" onchange={{action "selectType" value="target.value"}}>
+							{{#each test_cases as |case|}}
+								<option value={{case}} selected={{eq type case}}>{{case}}</option>
+							{{/each}}
+						</select>
+					</div>
+					{{#if (eq type 'Ping')}}
+						{{test-case/ping sendAttrs=(action "addTestCase")}}
+					{{/if}}
+				</form>
+			</div>
+		</div>
+	</div>
+</div>

@@ -1,19 +1,19 @@
 <nav class="navbar navbar-default">
 	<div class="container-fluid">
 		<div class="navbar-header">
-			<a class="navbar-brand" href="#">{{title}}</a>
+			{{#link-to 'home' class='navbar-brand nav-bar'}} {{title}} {{/link-to}}
 		</div>
 		<ul class="nav navbar-nav navbar-right">
 			{{#each menuItems as |item index|}}
 				{{#unless item.restricted}}
 					{{#unless item.links}}
-						<li id="{{item.id}}-link"><a href="{{item.url}}">{{item.label}}</a></li>
+						<li id="{{item.id}}-link">{{#link-to item.url}} {{item.label}} {{/link-to}}</li>
 					{{else}}
 						<li class="dropdown">
 							<a href="#" id="{{item.id}}-dropdown" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">{{item.label}}<span class="caret"></span></a>
 							<ul class="dropdown-menu">
 								{{#each item.links as |subItem index|}}
-									<li id="{{subItem.id}}-link"><a href="{{subItem.url}}">{{subItem.label}}</a></li>
+									<li id="{{subItem.id}}-link">{{#link-to subItem.url}} {{subItem.label}} {{/link-to}}</li>
 								{{/each}}
 							</ul>
 						</li>

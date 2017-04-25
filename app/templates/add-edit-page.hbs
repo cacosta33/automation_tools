@@ -1,0 +1,21 @@
+<div class="container">
+	<div class="col-md-4">
+		{{test-case/base addAction=(action "addStep")}}
+	</div>
+	<div class="col-md-5 col-md-offset-3">
+		<div class="panel panel-default">
+			<div class="panel-body">
+			{{#each validatorSteps as |step|}}
+				<h3>{{step.type}}</h3>
+				Attributes: 
+					<ul>
+					{{#each-in step.attrs as |key value|}}
+						<li> <b>{{key}}: </b>{{value}}</li>
+					{{/each-in}}
+					</ul>
+				<hr>
+			{{/each}}
+			</div>
+		</div>
+	</div>
+</div>

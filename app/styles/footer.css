@@ -1,0 +1,12 @@
+
+footer {
+	width: 100%;
+	bottom: 0;
+	position: fixed;
+}
+
+.footer{
+	margin-right: auto;
+	margin-left: auto;
+	text-align: center;
+}

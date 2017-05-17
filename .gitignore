@@ -19,3 +19,6 @@ testem.log
 # DS Store info
 .DS_Store
 public/.DS_Store
+
+# Logging
+/server/proxies/logs/*

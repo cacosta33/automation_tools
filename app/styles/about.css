@@ -25,3 +25,7 @@ ul.about {
   background: black;
   color: white;
 }
+
+div.centered{
+  margin-top: 15%;
+}

@@ -16,6 +16,8 @@ Router.map(function() {
 
   this.route('test-case', function() {});
   this.route('add-edit-page');
+  this.route('blog-page');
+  this.route('resume');
 });
 
 

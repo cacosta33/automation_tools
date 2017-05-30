@@ -1,12 +1,24 @@
 import Ember from 'ember';
 
 export default Ember.Component.extend({
-	title: 'Cesar\'s Domain',
+	title: 'Cesar Acosta',
 	menuItems: [
 		{
 			label: 'About',
 			id: 'about',
 			url: 'about',
+			restricted: false,
+		},
+		{
+			label: 'Blog',
+			id: 'blog',
+			url: 'blog-page',
+			restricted: false,
+		},
+		{
+			label: 'Resume',
+			id: 'resume',
+			url: 'resume',
 			restricted: false,
 		},
 		{	

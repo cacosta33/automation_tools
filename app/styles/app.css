@@ -1,6 +1,7 @@
 @import 'nav-bar.css';
 @import 'about.css';
 @import 'footer.css';
+@import 'resume.css';
 
 body, html{
 	background-color: #E8E8E8;

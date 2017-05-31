@@ -1,3 +1,7 @@
-{{!-- {{nav-bar}} --}}
-{{outlet}}
-{{!-- {{footer-bar}} --}}
+{{#if showLayout}}
+	{{nav-bar}}
+	{{outlet}}
+	{{footer-bar}}
+{{else}}
+	{{outlet}}
+{{/if}}

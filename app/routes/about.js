@@ -2,7 +2,7 @@ import Ember from 'ember';
 
 let model = {
 	email: 'alternativeEmail@ae.com',
-	phoneNum: '(not making this public)',
+	phoneNum: '---',
 };
 
 export default Ember.Route.extend({

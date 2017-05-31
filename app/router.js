@@ -14,7 +14,7 @@ Router.map(function() {
   	this.route('tool2');
   });
 
-  this.route('test-case', function() {});
+  this.route('test-case');
   this.route('add-edit-page');
   this.route('blog-page');
   this.route('resume');

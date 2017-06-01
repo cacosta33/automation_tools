@@ -1,1 +1,14 @@
 {{outlet}}
+<div class="container">
+	{{#each model as |post|}}
+	<div class="panel panel-default">
+		<div class="panel-heading center">
+			<h3 class="panel-title">{{post.title}}</h3>
+		</div>
+		<div class="panel-body center">
+			{{post.content}}
+		</div>
+		<div class="panel-footer center">Posted on {{post.date}}</div>
+	</div>
+	{{/each}}
+</div>

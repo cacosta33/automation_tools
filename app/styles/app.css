@@ -2,6 +2,7 @@
 @import 'about.css';
 @import 'footer.css';
 @import 'resume.css';
+@import 'blog-page.css';
 
 body, html{
 	background-color: #E8E8E8;
